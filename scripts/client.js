@@ -17,6 +17,17 @@ function employeeChart(){
     title: $('#title').val(),
     anSal: $('#ansal').val()
   }
+
+  let blankety = false
+  for (const hallo in emChart){
+    if(!emChart[hallo]){
+      blankety=true
+    }
+  }
+  if (blankety ===true){
+    alert('Please enter missing information')
+  }
+  else if(blankety===false){
     employees.push(emChart);
     let el =$('#body');
     el.append(
@@ -40,6 +51,7 @@ function employeeChart(){
   $('#idnum').val(''),
   $('#title').val(''),
     $('#ansal').val('')
+  }
 }
 
 function deleteButton (){
