@@ -29,7 +29,7 @@ function employeeChart(){
         </td>
         <td>${emChart.title}
         </td>
-        <td>${emChart.anSal}
+        <td class="salad">${emChart.anSal}
         </td>
         <td><button class=delete>Delete</button></td>
         </tr>
