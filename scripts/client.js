@@ -56,7 +56,7 @@ function calc(){
   let calculator= $('#div3')
   $("#div3").css('background-color','yellow')
   calculator.empty()
-  calculator.append(`<p>${monthlySum}</p>`)
+  calculator.append(`<p>Total Monthly Salary:${monthlySum}</p>`)
 
   if (monthlySum > 20000){
     $("#div3").css('background-color','red')
